@@ -1,0 +1,11 @@
+luac: a lua interpreter embedded in a c++ program
+
+Fixes:
+1. Fixed a error on my part to check argc first before anything else
+2. Fixed the Prompt so that when you push return it displays Lua>> properly
+3. minor fixes
+
+
+Todo:
+	Actually take advantage of having it embedded in a c++ program :p
+	Turn it into something useful.

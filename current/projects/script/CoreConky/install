@@ -1,0 +1,10 @@
+#!/bin/bash
+#install script for coreconky
+echo "Installing coreconky..."
+sleep 5
+echo "Configuring Packages..."
+sleep 5
+sudo chmod +x coreconky*
+sudo cp coreconky* /usr/bin/
+echo "Install Complete..."
+

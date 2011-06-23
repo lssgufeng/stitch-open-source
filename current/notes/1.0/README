@@ -1,0 +1,27 @@
+######################################################################################
+#CODED BY: CORE                                                                      #
+#TITLE: notes                                                                        #
+#USES:                                                                               #
+#     notes -h : list's help                                                         #
+#     notes -f <filename> : the name of the file to be used                          #
+#                                                                                    #
+#                                                                                    #
+#License: GNU GPL 3                                                                  #
+#                                                                                    #
+#OTHER:                                                                              #
+#Feel free to Redistribute it and make changes so long as you keep my name and this  #
+#file and the GPL 3 file with it and as long as you notify me at Aquertu@gmail.com   #
+#because I would like to see any improvements made on it :P                          #
+######################################################################################
+
+
+Just a little something I whipped up because I needed a fast format to store text in.
+
+
+To compile:
+	g++ main.cpp -o notes       : c++ version
+	g++ -S main.cpp             : generates Assembly version
+	g++ main.s -o notes         : Compile Assembly version which is much faster.
+
+--Core aka Justin aka Celtrix aka Avarionist aka Atrirn aka stitch.
+lmao long ass aka.

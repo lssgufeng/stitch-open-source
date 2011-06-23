@@ -1,0 +1,9 @@
+Lua embedded into a C program
+
+A Lua interpreter embedded in a C program 
+
+Uses:
+- possibly as a configuration system much easier to use than an xml file
+- adds a dynamic capability to the program
+- adds a way to extend the program via callbacks(note: i really need to understand callbacks better)
+- could easily script AI 

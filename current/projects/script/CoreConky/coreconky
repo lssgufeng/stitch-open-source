@@ -1,0 +1,4 @@
+#!/bin/bash
+#Core's coreconky bash frontend
+
+lua /usr/bin/coreconky.lua $1

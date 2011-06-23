@@ -1,0 +1,6 @@
+#!/bin/bash
+#Core's Install Script.
+#syntax: ./install nameofprogram
+name=$1
+sudo cp $name /usr/bin/$name
+echo "Install Finished."
