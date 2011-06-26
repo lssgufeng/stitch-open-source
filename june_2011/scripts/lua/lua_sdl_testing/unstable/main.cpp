@@ -1,0 +1,32 @@
+#include "stitch.h"
+
+
+
+
+
+int main(int argc,char ** argv){
+	bool running=true;
+	SDL_Event Event;
+	SDL_Surface* display = NULL;
+	lua_State * l;
+	l = lua_open();
+	luaL_openlibs(l);
+	proc_args(argc,argv,l);
+	if(SDL_Init(SDL_INIT_EVERYTHING) < 0){
+			exit(0);
+	}
+	if((display = SDL_SetVideoMode(640,480,32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL){
+			exit(0);
+	}
+while(running == true && SDL_PollEvent(&Event)){
+interpret_lua(l);
+
+ if(Event.type == SDL_QUIT){
+	running = false;
+	SDL_Quit();
+}
+        
+}
+lua_close(l);
+return 0;
+}
