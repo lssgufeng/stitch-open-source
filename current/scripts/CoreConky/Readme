@@ -1,0 +1,30 @@
+CoreConky Coded by Core
+Version 1.08 Final
+
+You can find me on itznitro.com
+
+INSTALLATION:
+
+gunzip CoreConky.tar.gz
+tar -xf CoreConky.tar
+cd CoreConky
+./install
+
+type coreconky -h for more info
+
+I will be hosting other projects on SourceForge whenever i have the chance to create an 
+account
+In the meantime almost all projects will be hosted on ItzNitro Forums under Core's 
+Download Thread(after its created)
+
+This is most likely the last revision of this utility unless there are bugs which i 
+doubt its purpose is super simple.
+
+md5sum's can be found at the end of this file
+
+--Sincerely Core
+
+
+3a3ad093c85d05d0b8fa96f12b9415fc  coreconky
+c28e564ccd95bf80c9690e469feb166a  coreconky.lua
+2947d3625e29a2460fdeba468da0d390  install
