@@ -30,16 +30,17 @@ return 0;
 
 
 void lsmain(lua_State* L, SDL_Event event){
-        SDL_Thread * thread = NULL;
+        SDL_Thread * thread ;
 	cout<<"Entering lsmain...\n";
 	thread = SDL_CreateThread(handler,L);
-	while(SDL_PollEvent(&event)){
+	for(;;){
+	SDL_PollEvent(&event);
 		
 	if(event.type == SDL_QUIT){
 		quit = true;
 		lua_close(L);
 		SDL_Quit();
-		exit(0);
+
 	  }
 	
 		
