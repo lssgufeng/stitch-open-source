@@ -1,3 +1,6 @@
+#ifndef __LSMAIN_H_
+#define __LSMAIN_H_
+
 #include <lua.hpp>
 #include <iostream>
 #include <SDL/SDL.h>
@@ -34,13 +37,6 @@ void lsmain(lua_State* L, SDL_Event event){
 				exit(0);
 			  }
 		
-		cout<<"Lua >> ";
-		cin.getline(buffer,256);
-		error = luaL_loadbuffer(L,buffer,strlen(buffer), "line") || lua_pcall(L,0,0,0);
-		if(error){
-			cout << lua_tostring(L,-1) << endl;
-			lua_pop(L,1);
-		}
 }
 }
-		
+#endif
