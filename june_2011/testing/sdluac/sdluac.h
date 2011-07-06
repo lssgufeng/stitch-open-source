@@ -7,6 +7,7 @@
 #include <cstdlib>
 #include <SDL/SDL.h>
 using namespace std;
+
 int argc;
 char ** argv;
 
@@ -37,20 +38,6 @@ lua_pop(L,1);
 }//while() end
 }//else if end
 
-
-void sdluac::init(){
-//SDL_Event* Event = NULL;
-SDL_Surface* display = NULL;
-
-if(SDL_Init(SDL_INIT_EVERYTHING) < 0){
-			exit(1);
-	}
-	if((display = SDL_SetVideoMode(640,480,32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL){
-			exit(1);
-	}
-
-}
-
 void proc_events(){
 SDL_Event my_event;
 while(SDL_PollEvent(&my_event)){
@@ -65,7 +52,7 @@ while(SDL_PollEvent(&my_event)){
 
 void sdluac::loop(int argc, lua_State *L){
 int x=0;
-sdluac::init();
+
 while(running == true){
 for(x=0;x<argc;x++){
 if(string(argv[x]) == "-h"){
@@ -95,7 +82,7 @@ luaL_dofile(L,argv[2]);
 
 
 }//for
-proc_events();
+//proc_events();
 }
 
 }//while
