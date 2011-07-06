@@ -14,7 +14,7 @@ lua_State * L;
 L = lua_open();
 luaL_openlibs(L);
 
-lsmain(L,Event);
+lsmain(L, &Event);
 
 
 return 0;
