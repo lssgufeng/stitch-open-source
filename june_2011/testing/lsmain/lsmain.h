@@ -9,7 +9,6 @@ SDL_Thread * thread;
 
 void interpret(lua_State* L){
 	int error;
-	int x = 0;
 	char buffer[256];
 	while(quit == false){
 	cout<<"Lua >> ";
@@ -34,10 +33,14 @@ void lsmain(lua_State* L, SDL_Event event){
 	SDL_PollEvent(&event);
 	if(event.type == SDL_QUIT){
 		quit = true;
+		cout<<"Quiting SDL\n";
 		SDL_Quit();
+		cout<<"SDL Quit...\n";
 	  }	
 			
 }
+cout<<"Attempting to close lua...\n";
 lua_close(L);
+cout<<"Lua Closed\n";
 }
 		
