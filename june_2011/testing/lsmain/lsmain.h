@@ -5,12 +5,13 @@
 using namespace std;
 
 bool quit = false;
+SDL_Thread * thread;
 
 void interpret(lua_State* L){
 	int error;
 	int x = 0;
 	char buffer[256];
-	while(x == 0){
+	while(quit == false){
 	cout<<"Lua >> ";
 	cin.getline(buffer,256);
 	error = luaL_loadbuffer(L,buffer,strlen(buffer), "line") || lua_pcall(L,0,0,0);
@@ -22,29 +23,21 @@ void interpret(lua_State* L){
 }
 
 int handler(void* data){
-while(quit == false){
 interpret((lua_State*) data);
-}
 return 0;
 }
 
-
 void lsmain(lua_State* L, SDL_Event event){
-        SDL_Thread * thread ;
 	cout<<"Entering lsmain...\n";
-	thread = SDL_CreateThread(handler,L);
-	for(;;){
+        thread = SDL_CreateThread(handler, L);
+	while(quit == false){
 	SDL_PollEvent(&event);
-		
 	if(event.type == SDL_QUIT){
 		quit = true;
-		lua_close(L);
 		SDL_Quit();
-
-	  }
-	
-		
+	  }	
 			
 }
+lua_close(L);
 }
 		
