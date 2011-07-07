@@ -1,6 +1,0 @@
-#!/bin/bash
-
-echo "Uninstalling coreluac"
-sudo rm /usr/bin/coreluac
-sudo rm /usr/bin/luactest.lua
-echo "Uninstall Complete"
