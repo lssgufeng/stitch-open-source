@@ -20,9 +20,6 @@ luaL_openlibs(L);
 
 
 lsmain(L, Event);
-
-
-lua_close(L);
-
+cout<<"lsmain(L,Event) Finished successfully now quitting...\n";
 return 0;
 }
