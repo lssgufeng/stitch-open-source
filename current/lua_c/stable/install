@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo "Installing to /usr/bin/"
-sudo cp coreluac /usr/bin/
-sudo cp luactest.lua /usr/bin/
-echo "Install Finished...."
-echo "To test type coreluac -ls luactest.lua"
