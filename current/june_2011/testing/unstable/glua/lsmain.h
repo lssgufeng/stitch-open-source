@@ -20,6 +20,7 @@ SDL_Surface * screen;
 SDL_Thread * thread;
 
 void interpret(lua_State* L){
+	luaL_dofile(L,"glua.lua");
 	int error;
 	char buffer[256];
 	while(quit == false){
