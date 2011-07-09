@@ -1,0 +1,19 @@
+Coder: Core aka Aquertu@gmail aka stitch ask Justin
+Purpose: To see if it was possible to have a window and a lua interpreter in the same process but with the interpreter in the terminal to make use of debugging
+Date: July 6,2011
+
+
+
+FIXES:
+
+June 24, 2011: Begin Project as sdluac
+June 25, 2011: forked to make maintaining code easier fork is called luac(nothing to do with the lua compiler)
+July 5,  2011: Thanks to #lua on freenode.net I now realize that input can be blocked in single threaded applications
+July 5,  2011: was also forked to lsmain(the current project)
+July 6,  2011: Double free() error on my part didn't realize that I had called lua_close(L) and SDL_Quit() twice
+
+
+FUTURE:
+
+	Will Probably try to switch over to another GUI but I will maintain using SDL_Threads unless my boost implementation was accurate?
+	most likely will be the ground for my itzporg application.
