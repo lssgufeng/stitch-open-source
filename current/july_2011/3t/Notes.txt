@@ -1,0 +1,8 @@
+##############################################################################################
+
+About: A Simple Tic Tac Toe Game Do note that this is Text only the entire thing only runs in Terminal/Console and doesn't require any extra libraries its 100% STL only.
+
+Coder: Core@Itznitro.com aka Aquertu aka Justin
+
+other: absolutely no restrictions on this as long as you don't simply copy and paste and claim it to be your own. Don't use it to cheat on your homework either.
+##############################################################################################
