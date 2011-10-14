@@ -1,0 +1,4 @@
+ifeq ($(_THEOS_TARGET_LOADED),)
+_THEOS_TARGET_LOADED := 1
+THEOS_TARGET_NAME := null
+endif
