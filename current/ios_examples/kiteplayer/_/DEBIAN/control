@@ -1,0 +1,10 @@
+Package: com.kite.kiteplayer
+Name: kiteplayer
+Depends: 
+Version: 0.0.1-3
+Architecture: iphoneos-arm
+Description: An awesome application!
+Maintainer: kite
+Author: kite
+Section: Utilities
+Installed-Size: 1680

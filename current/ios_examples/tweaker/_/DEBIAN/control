@@ -1,0 +1,10 @@
+Package: com.aquertu.tweaker
+Name: tweaker
+Depends: mobilesubstrate
+Version: 0.0.1-3
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: aquertu
+Author: aquertu
+Section: Tweaks
+Installed-Size: 24

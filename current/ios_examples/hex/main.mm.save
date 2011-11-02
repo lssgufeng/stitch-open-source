@@ -1,0 +1,33 @@
+#import <Foundation/Foundation.h>
+int main(int argc, char **argv, char **envp) {
+NSAutoreleasePool * pool =[[NSAutoreleasePool alloc] init];
+NSFileManager *filemgr;
+NSFileHandle *file;
+NSMutableData * edata;
+NSMutableData * sdata;
+NSMutableData * stdata;
+const char *bytes = "\xFF";
+const char *statone = "\x0F";
+const char *stattwo = "\x27";
+data = [NSMutableData dataWithBytes: bytes length:strlen(bytes)];
+file = [NSFileHandle fileHandleForUpdatingAtPath: @"./save0.dat"];
+[file seekToFileOffset: 0x16];
+[file writeData: edata];
+[file seekToFileOffset: 0x4A];
+[file writeData: sdata];
+[file seekToFileOffset: 0x4B];
+[file writeData: stdata];
+[file closeFile];
+filemgr = [NSFileManager defaultManager];
+if(file == nil)
+	NSLog(@"Failed to Open file");
+if ([filemgr isWritableFileAtPath: @"/var/mobile/Applications/8B2B816E-A5EE-451D-9B6C-398A11A63EDF/Documents/save0.dat"]  == YES)
+        NSLog (@"File is writable");
+else
+        NSLog (@"File is read only");
+
+[pool drain];
+return 0;
+}
+
+// vim:ft=objc
