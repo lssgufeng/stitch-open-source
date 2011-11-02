@@ -1,0 +1,9 @@
+Package: com.kite.kbot
+Name: kbot
+Depends: 
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome application!
+Maintainer: kite
+Author: kite
+Section: Utilities

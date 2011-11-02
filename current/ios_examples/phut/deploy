@@ -1,0 +1,4 @@
+#!/bin/bash
+clear
+dpkg -r com.aquertu.phut
+make clean && make package && make install

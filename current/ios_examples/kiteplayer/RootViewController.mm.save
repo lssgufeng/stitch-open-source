@@ -1,0 +1,22 @@
+#import "RootViewController.h"
+#import <AudioToolbox/AudioServices.h>
+@implementation RootViewController
+
+AudioFileID * _audioID;
+
+- (void)loadView {
+	self.view = [[[UIView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]] autorelease];
+	self.view.backgroundColor = [UIColor blackColor];
+}
+- (void)buttonMethod:(id)sender{
+//buttonMethod or callback for when a button is pressed
+
+
+}
+- (void)viewDidLoad{
+	UIButton * _button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	_button.frame = CGRectMake(100,100,100,60);
+	[_button setTitle:@"Play" forState:UIControlStateNormal];
+	[self.view addSubview:_button];
+}
+@end

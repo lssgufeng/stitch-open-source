@@ -1,0 +1,9 @@
+Package: com.kite.photoman
+Name: photoman
+Depends: 
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: A test with photoPicker and Nav controller
+Maintainer: kite
+Author: kite
+Section: Utilities

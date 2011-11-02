@@ -1,0 +1,10 @@
+Package: com.aquertu.phut
+Name: pHut
+Depends: 
+Version: 0.0.1-1
+Architecture: iphoneos-arm
+Description: An awesome application!
+Maintainer: aquertu
+Author: aquertu
+Section: Utilities
+Installed-Size: 32

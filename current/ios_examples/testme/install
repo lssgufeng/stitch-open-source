@@ -1,0 +1,5 @@
+#!/bin/bash
+
+dpkg -r com.kite.testme
+rm *.deb
+make && make package && make install

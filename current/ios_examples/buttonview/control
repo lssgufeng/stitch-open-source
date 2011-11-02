@@ -1,0 +1,9 @@
+Package: com.aquerut.buttonview
+Name: buttonView
+Depends: 
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome application!
+Maintainer: aquerut
+Author: aquerut
+Section: Utilities
